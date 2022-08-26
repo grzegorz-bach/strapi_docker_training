@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "atlassian_settings",
+  "info": {
+    "singularName": "atlassian-setting",
+    "pluralName": "atlassian-settings",
+    "displayName": "Atlassian Settings",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cloud_domain": {
+      "type": "string",
+      "required": true,
+      "regex": "^https://"
+    },
+    "api_token": {
+      "type": "string",
+      "required": true
+    },
+    "user_email": {
+      "type": "email"
+    }
+  }
+}

@@ -28,7 +28,7 @@ module.exports = {
             code: `STRP-${String(i).padStart(4, 0)}`,
             price: Number(faker.commerce.price(1, 1000, 2)),
             category:
-              categories[Math.floor(Math.random() * (categories.length - 1))],
+              categories[Math.floor(Math.random() * categories.length)],
           },
         });
       });
